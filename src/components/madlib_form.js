@@ -1,8 +1,29 @@
 import React, {Component} from 'react';
+import{
+    Col,
+    Row
+} from 'reactstrap';
 
 class MadlibForm extends Component {
     render() {
-      return <h1>Bottega Mad Lib Form Component</h1>;
+      return (
+          <Row style={{textAlign: 'center', color: 'white'}}>
+               <Col md= "3" className= "inputWrapper">
+                  <Row>
+                    <Col md= "6">
+                        <label className= "greenLabel">1</label> 
+                    </Col>
+                     <Col md="6">
+                     <input placeholder= "color" type= "text" />
+                     </Col>
+                  </Row>
+                </Col>
+               <Col md= "3">Column </Col>
+               <Col md= "3">Column </Col>
+               <Col md= "3">Column </Col>
+               <Col md= "3">Column </Col>
+           </Row>
+      );
     }
 }
 
