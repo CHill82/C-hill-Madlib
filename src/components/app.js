@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Greeting from './madlib_form'
 export default class App extends Component {
   render() {
     return (
@@ -11,6 +11,8 @@ export default class App extends Component {
           Fill out the feilds below and click generate button<br/> to see the Mad Lib Story
           </div>
          </div> 
+         <MadlibForm />
+        
         </div>
         
       </div>
